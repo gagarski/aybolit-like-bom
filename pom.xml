@@ -24,6 +24,11 @@
 
         <jooq.generated.dir>${project.basedir}/target/generated-sources/jooq</jooq.generated.dir>
     </properties>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</developerConnection>
+    </scm>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
