@@ -27,7 +27,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</developerConnection>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <dependencyManagement>
         <dependencies>
