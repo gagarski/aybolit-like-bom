@@ -20,7 +20,7 @@
         <janino.version>3.1.2</janino.version>
         <args4j.version>2.33</args4j.version>
         <guava.version>30.1-jre</guava.version>
-        <vertigram.version>0.1.0</vertigram.version>
+        <vertigram.version>0.1.1</vertigram.version>
         <jooq.generated.dir>${project.basedir}/target/generated-sources/jooq</jooq.generated.dir>
     </properties>
 
