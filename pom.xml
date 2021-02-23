@@ -19,6 +19,7 @@
         <jooq.version>3.13.5</jooq.version>
         <janino.version>3.1.2</janino.version>
         <args4j.version>2.33</args4j.version>
+        <guava.version>30.1-jre</guava.version>
         <vertigram.version>0.1.0</vertigram.version>
         <jooq.generated.dir>${project.basedir}/target/generated-sources/jooq</jooq.generated.dir>
     </properties>
@@ -30,6 +31,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-jdbc-client</artifactId>
@@ -250,4 +256,15 @@
             </plugins>
         </pluginManagement>
     </build>
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+            <id>bintray-gagar-vertigram</id>
+            <name>gagar-vertigram</name>
+            <url>https://dl.bintray.com/gagar/vertigram</url>
+        </repository>
+    </repositories>
 </project>
