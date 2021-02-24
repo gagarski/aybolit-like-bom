@@ -5,12 +5,22 @@
     <parent>
         <groupId>ski.gagar</groupId>
         <artifactId>vertigram-bom</artifactId>
-        <version>0.1.1</version>
+        <version>0.2.3</version>
     </parent>
 
     <artifactId>aybolit-like-bom</artifactId>
     <version>0.1.4-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <name>Aybolit-like BOM</name>
+    <description>BOM for aybolit-like bots</description>
+
+    <scm>
+        <connection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</developerConnection>
+        <url>https://github.com/gagarski/aybolit-like-bom</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <psqldriver.version>42.2.15</psqldriver.version>
@@ -20,14 +30,9 @@
         <janino.version>3.1.2</janino.version>
         <args4j.version>2.33</args4j.version>
         <guava.version>30.1-jre</guava.version>
-        <vertigram.version>0.1.1</vertigram.version>
+        <vertigram.version>0.2.3</vertigram.version>
         <jooq.generated.dir>${project.basedir}/target/generated-sources/jooq</jooq.generated.dir>
     </properties>
-
-    <scm>
-        <developerConnection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</developerConnection>
-      <tag>v0.1.1</tag>
-    </scm>
 
     <dependencyManagement>
         <dependencies>
@@ -99,6 +104,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -256,22 +262,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-            <id>bintray-gagar-vertigram</id>
-            <name>gagar-vertigram</name>
-            <url>https://dl.bintray.com/gagar/vertigram</url>
-        </repository>
-    </repositories>
-    <distributionManagement>
-        <repository>
-            <id>bintray-gagar-vertigram</id>
-            <name>gagar-vertigram</name>
-            <url>https://api.bintray.com/maven/gagar/vertigram/${artifactId}/;publish=1</url>
-        </repository>
-    </distributionManagement>
 </project>
