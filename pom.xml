@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>aybolit-like-bom</artifactId>
-    <version>0.2.4-SNAPSHOT</version>
+    <version>0.2.4</version>
     <packaging>pom</packaging>
 
     <name>Aybolit-like BOM</name>
@@ -19,7 +19,7 @@
         <connection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</connection>
         <developerConnection>scm:git:git@github.com:gagarski/aybolit-like-bom.git</developerConnection>
         <url>https://github.com/gagarski/aybolit-like-bom</url>
-        <tag>HEAD</tag>
+        <tag>v0.2.4</tag>
     </scm>
 
     <properties>
