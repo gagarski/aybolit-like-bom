@@ -5,7 +5,7 @@
     <parent>
         <groupId>ski.gagar</groupId>
         <artifactId>vertigram-bom</artifactId>
-        <version>0.2.3</version>
+        <version>0.2.4</version>
     </parent>
 
     <artifactId>aybolit-like-bom</artifactId>
@@ -30,7 +30,7 @@
         <janino.version>3.1.2</janino.version>
         <args4j.version>2.33</args4j.version>
         <guava.version>30.1-jre</guava.version>
-        <vertigram.version>0.2.3</vertigram.version>
+        <vertigram.version>0.2.4</vertigram.version>
         <jooq.generated.dir>${project.basedir}/target/generated-sources/jooq</jooq.generated.dir>
     </properties>
 
@@ -81,11 +81,6 @@
                 <groupId>args4j</groupId>
                 <artifactId>args4j</artifactId>
                 <version>${args4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.codehaus.janino</groupId>
-                <artifactId>janino</artifactId>
-                <version>${janino.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.janino</groupId>
